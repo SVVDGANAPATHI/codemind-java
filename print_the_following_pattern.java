@@ -4,23 +4,18 @@ public class pattern
 {
     public static void main(String args[])
     {
-        int n,i,j;
+        int n,i,j,p=65;
+        char c;
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
         for(i=0;i<n;i++)
         {
             for(j=0;j<n;j++)
             {
-                if(i==j)
-                {
-                    System.out.print("0");
-                }
-                else
-                {
-                   System.out.print("x"); 
-                }
+              System.out.print((char)p+" ");
             }
            System.out.println(""); 
+           p++;
         }
     }
 }
